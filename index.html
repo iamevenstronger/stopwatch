@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>StopWatch</title>
+    <script src="index.js"></script>
+    <link href="index.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color: #343434;">
+    <br><br><br>
+    <div id="stopwatch">
+        <div id="options" style="margin: auto;width: fit-content;">
+            <button class="btn" id="start" title="start" onclick="startTimer()"><i class="fa fa-play"></i></button>
+            <button class="btn" id="stop" title="stop" onclick="stopTimer()"><i class="fa fa-pause"></i></button>
+            <button class="btn" id="reset" title="reset" onclick="resetTimer()"><i class="fa fa-backward"></i></button>
+            <button class="lapBtn" onclick="setLaps()">Laps</button>
+        </div>
+        <div id="timer">
+            <span class="time" id="hours">00</span>
+            <span class="time" id="minutes">00</span>
+            <span class="time" id="seconds">00</span>
+            <span class="time" id="milliseconds">00</span>
+        </div>
+        <div id="laps">
+        </div>
+    </div>
+</body>
+
+</html>
